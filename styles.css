@@ -93,3 +93,9 @@ nav a[aria-current='Unit'] {
   color: #000;
   position: absolute;
 }
+
+.top1, .top2 {
+  bottom: 30px;
+  position: absolute;
+  text-align: left;
+}
