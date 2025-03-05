@@ -97,5 +97,6 @@ nav a[aria-current='Unit'] {
 .top1, .top2 {
   bottom: 30px;
   position: absolute;
-  text-align: left;
+  text-align: justify;
+  font-weight: bold;
 }
