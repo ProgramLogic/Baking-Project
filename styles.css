@@ -81,8 +81,9 @@ nav a[aria-current='Unit'] {
 .btn1 {
   text-decoration: underline;
   border: none;
-  right: 30px;
+  right: -30px;
   color: #000;
+  position: absolute;
 }
 
 .btn2 {
@@ -90,4 +91,5 @@ nav a[aria-current='Unit'] {
   border: none;
   right: 30px;
   color: #000;
+  position: absolute;
 }
