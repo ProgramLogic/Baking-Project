@@ -13,7 +13,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; 
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
@@ -53,4 +53,26 @@ nav a[aria-current='Recipies'] {
 nav a[aria-current='Unit'] {
   color: #000;
   background-color: #d4d4d4;
+}
+
+.img {
+  width: 900px;
+  height: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top {
+  right: 30px;
+  display: flex; 
+  color: whitesmoke;
+  border: #000000;
+  border: solid;
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 2px;
+  width: 22%; 
 }
