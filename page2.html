@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script2.js"></script>
   </head>
   <body>
     <nav>
@@ -15,17 +15,15 @@
     <main>
       <h1>This is where you make recipies and the save them</h1>
 
-      <button class="rec1">
-        Make a Recipie
-      </button>
+      <button id="myBtn">Make Recipie</button>
 
-      <button class="see">
-        See created recipies
-      </button>
+      <div id="myModal" style="display: none;">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Recipie Name</p>
+        </div>
+      </div>
 
-      <button class="del">
-        Delete a recipie
-      </button>
       
     </main>
   </body>
