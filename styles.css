@@ -100,3 +100,8 @@ nav a[aria-current='Unit'] {
   text-align: justify;
   font-weight: bold;
 }
+
+#registerForm {
+  background-color: blue;
+  color:blue;
+}
