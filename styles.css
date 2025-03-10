@@ -116,71 +116,27 @@ button {
   transition: background-color 0.3s;
 }
 
+/* Button hover effect */
 button:hover {
-  background-color: #ddd;
+  background-color: #858585;
 }
 
-.rec1 {
-  background-color: #4CAF50;
-  color: white;
+/* Default style for stacked buttons */
+.rec1, .see, .del {
+  background-color: blue;
+  color: rgb(0, 0, 0);
+  white-space: nowrap; /* Ensures text stays in one line */
+  overflow: hidden; /* Hides overflowing text */
+  display: block; /* Makes sure buttons stack vertically */
+  width: 200px; /* Set a fixed width for the buttons */
+  padding: 10px 20px; /* Adds some space around the text */
+  position: relative; /* Allows positioning of the text */
+  left: -20px; /* Initially position the text partially off-screen to the left */
+  margin-bottom: 10px; /* Adds space between buttons */
+  transition: left 0.3s ease; /* Smooth transition to move the text */
 }
 
-.see {
-  background-color: #008CBA;
-  color: white;
+/* Hover effect */
+.rec1:hover, .see:hover, .del:hover {
+  left: 0; /* Move the text to its original position when hovered */
 }
-
-.del {
-  background-color: #f44336;
-  color: white;
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-button {
-  margin: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-/* Modal styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: white;
-  margin: 15% auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-}
-
-.close {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
