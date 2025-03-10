@@ -123,3 +123,13 @@ nav a[aria-current='Unit'] {
   border: #000;
   border: solid;
 }
+
+.del {
+  color:#000;
+  background-color:blue;
+  padding: 10px;
+  border-radius: 15px;
+  border: #000;
+  border: solid;
+}
+
