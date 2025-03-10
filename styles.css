@@ -116,27 +116,27 @@ button {
   transition: background-color 0.3s;
 }
 
-/* Button hover effect */
+
 button:hover {
   background-color: #858585;
 }
 
-/* Default style for stacked buttons */
+
 .rec1, .see, .del {
   background-color: blue;
   color: rgb(0, 0, 0);
-  white-space: nowrap; /* Ensures text stays in one line */
-  overflow: hidden; /* Hides overflowing text */
-  display: block; /* Makes sure buttons stack vertically */
-  width: 200px; /* Set a fixed width for the buttons */
-  padding: 10px 20px; /* Adds some space around the text */
-  position: relative; /* Allows positioning of the text */
-  left: -20px; /* Initially position the text partially off-screen to the left */
-  margin-bottom: 10px; /* Adds space between buttons */
-  transition: left 0.3s ease; /* Smooth transition to move the text */
+  white-space: nowrap; 
+  overflow: hidden; 
+  display: block; 
+  width: 200px; 
+  padding: 10px 20px; 
+  position: relative; 
+  left: -20px; 
+  margin-bottom: 10px; 
+  transition: left 0.3s ease; 
 }
 
-/* Hover effect */
+
 .rec1:hover, .see:hover, .del:hover {
-  left: 0; /* Move the text to its original position when hovered */
+  left: 0; 
 }
