@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Baking Recipes</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <nav>
@@ -13,12 +13,42 @@
       <a href="/page2.html" aria-current="Recipies">Baking Recipies</a>
     </nav>
     <main>
-      <h1>This is where you make recipies and the save them</h1>
+      <h1>This is where you make recipes and save them</h1>
 
-<button class="rec1" onclick="createRecipe()">Make a Recipe</button>
-<button class="see" onclick="viewRecipes()">See Created Recipes</button>
-<button class="del" onclick="deleteRecipe()">Delete a Recipe</button>
-
+      <!-- Buttons for actions -->
+      <button class="rec1" onclick="openCreateRecipeModal()">Make a Recipe</button>
+      <button class="see" onclick="openViewRecipesModal()">See Created Recipes</button>
+      <button class="del" onclick="openDeleteRecipeModal()">Delete a Recipe</button>
     </main>
+
+    <!-- Create Recipe Modal -->
+    <div id="createRecipeModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeCreateRecipeModal()">&times;</span>
+        <h2>Create a New Recipe</h2>
+        <input type="text" id="recipeName" placeholder="Recipe Name" />
+        <textarea id="recipeInstructions" placeholder="Instructions"></textarea>
+        <button onclick="saveRecipe()">Save Recipe</button>
+      </div>
+    </div>
+
+    <!-- View Recipes Modal -->
+    <div id="viewRecipesModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeViewRecipesModal()">&times;</span>
+        <h2>Created Recipes</h2>
+        <div id="recipesList"></div>
+      </div>
+    </div>
+
+    <!-- Delete Recipe Modal -->
+    <div id="deleteRecipeModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeDeleteRecipeModal()">&times;</span>
+        <h2>Delete a Recipe</h2>
+        <input type="text" id="deleteRecipeName" placeholder="Recipe Name to Delete" />
+        <button onclick="deleteRecipe()">Delete Recipe</button>
+      </div>
+    </div>
   </body>
 </html>
