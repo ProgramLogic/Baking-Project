@@ -1,3 +1,3 @@
 # Baking-Project
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/ProgramLogic/Baking-Project)
+A Helpful Baking Web App for making recipies and so much more
