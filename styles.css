@@ -106,30 +106,32 @@ nav a[aria-current='Unit'] {
   color:blue;
 }
 
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
 .rec1 {
-  color:#000;
-  background-color:blue;
-  padding: 10px;
-  border-radius: 15px;
-  border: #000;
-  border: solid;
+  background-color: #4CAF50;
+  color: white;
 }
 
 .see {
-  color:#000;
-  background-color:blue;
-  padding: 10px;
-  border-radius: 15px;
-  border: #000;
-  border: solid;
+  background-color: #008CBA;
+  color: white;
 }
 
 .del {
-  color:#000;
-  background-color:blue;
-  padding: 10px;
-  border-radius: 15px;
-  border: #000;
-  border: solid;
+  background-color: #f44336;
+  color: white;
 }
 
