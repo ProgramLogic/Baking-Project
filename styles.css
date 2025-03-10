@@ -105,3 +105,12 @@ nav a[aria-current='Unit'] {
   background-color: blue;
   color:blue;
 }
+
+.rec1 {
+  color:#000;
+  background-color:blue;
+  padding: 10px;
+  border-radius: 15px;
+  border: #000;
+  border: solid;
+}
