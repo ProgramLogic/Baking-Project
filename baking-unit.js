@@ -1,1 +1,1 @@
-const = require('promt-sync')
+const prompt = require('prompt-sync')();
