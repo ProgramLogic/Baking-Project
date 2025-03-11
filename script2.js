@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (form) {
         form.addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevents the page from refreshing
+            event.preventDefault(); 
 
-            // Get form values
+            
             const name = document.getElementById("recipe-name").value.trim();
             const ingredients = document.getElementById("ingredients").value.trim();
             const instructions = document.getElementById("instructions").value.trim();
@@ -18,16 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     instructions: instructions
                 };
 
-                // Retrieve existing recipes from localStorage or create an empty array
+                
                 let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
-                recipes.push(recipe); // Add new recipe
-                localStorage.setItem("recipes", JSON.stringify(recipes)); // Save back to localStorage
-
-                // Show success message
+                recipes.push(recipe); 
+                localStorage.setItem("recipes", JSON.stringify(recipes)); 
+                
                 document.getElementById("message").innerText = "Recipe saved successfully!";
                 document.getElementById("message").style.color = "green";
 
-                // Clear the form
+                
                 form.reset();
             } else {
                 document.getElementById("message").innerText = "Please fill in all fields.";
