@@ -1,0 +1,1 @@
+const = require('promt-sync')
