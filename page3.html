@@ -12,23 +12,20 @@
       <a href="/">Home</a>
       <a href="/page3.html" aria-current="Unit">Baking Unit Calculator</a>
     </nav>
-
     <main>
       <h1>Unit Calculator</h1>
-
       <form id="recipe-form">
-        <label for="ingredients">Enter your Ingredients:</label>
+        <label for="ingredients">Enter your Ingredient:</label>
         <textarea id="ingredients" name="ingredients" rows="6" required></textarea>
 
-        <label for="instructions">What you want it to convert to:</label>
-        <textarea id="instructions" name="instructions" rows="1" required></textarea>
+        <label for="conversion">What you want to convert to:</label>
+        <textarea id="conversion" name="conversion" rows="1" required></textarea>
 
         <label for="unit-output">Unit Output:</label>
         <textarea id="unit-output" name="unit-output" rows="6" required></textarea>
 
-        <button type="submit">Save Conversion</button>
+        <button type="submit">Save Unit</button>
       </form>
-
       <p id="message"></p>
     </main>
   </body>
