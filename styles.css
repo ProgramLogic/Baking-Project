@@ -152,6 +152,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: left;
+  text-decoration: none;
 }
 
 #recipe-form {
