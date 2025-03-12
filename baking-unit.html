@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Make a Recipe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script2.js"></script>
+    <link rel="html" href="create-recipie.html">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/page2.html" aria-current="Recipes">Baking Recipes</a>
+    </nav>
+
+    <main>
+        <h1>Create a New Recipe</h1>
+        <form id="recipe-form">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="6" required></textarea>
+
+            <button type="submit">Save Recipe</button>
+            <button onclick="window.location.href='page2.html'">Exit</button>
+            <button onclick="window.location.href='see-recipe.html'">See Created Recipes</button>
+            <button onclick="window.location.href='del-recipie.html'">Delete a Recipie</button>
+        </form>
+        
+        <p id="message"></p>
+    </main>
+</body>
+</html>
