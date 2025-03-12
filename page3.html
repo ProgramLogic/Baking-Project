@@ -6,34 +6,30 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
-
   </head>
   <body>
     <nav>
       <a href="/">Home</a>
       <a href="/page3.html" aria-current="Unit">Baking Unit Calculator</a>
     </nav>
+
     <main>
-      <main>
-        <h1>Unit Calculator</h1>
-        <form id="recipe-form">
-            <label for="recipe-name">Enter your Ingredients:</label>
-            <textarea id="instructions" name="instructions" rows="6" required></textarea>
+      <h1>Unit Calculator</h1>
 
-            <label for="ingredients">What you want it to covert to:</label>
-            <textarea id="ingredients" name="ingredients" rows="1" required></textarea>
+      <form id="recipe-form">
+        <label for="ingredients">Enter your Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" rows="6" required></textarea>
 
-            <label for="instructions">Unit Output:</label>
-            <textarea id="instructions" name="instructions" rows="6" required></textarea>
+        <label for="instructions">What you want it to convert to:</label>
+        <textarea id="instructions" name="instructions" rows="1" required></textarea>
 
-            <button type="submit">Save Unit to always be a able to quickly do you saved unit that you coverted</button>
-        </form>
-        
-        <p id="message"></p>
-    </main>
-</body>
-</html>
+        <label for="unit-output">Unit Output:</label>
+        <textarea id="unit-output" name="unit-output" rows="6" required></textarea>
 
+        <button type="submit">Save Conversion</button>
+      </form>
+
+      <p id="message"></p>
     </main>
   </body>
 </html>
