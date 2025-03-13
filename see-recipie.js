@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const recipesList = document.getElementById("recipes-list");
 
-    
     let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
 
     if (recipes.length === 0) {
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
             recipesList.appendChild(recipeDiv);
         });
 
-        
         document.querySelectorAll(".delete-btn").forEach(button => {
             button.addEventListener("click", function() {
                 let index = this.getAttribute("data-index");
@@ -35,8 +33,8 @@ function deleteRecipe(index) {
     let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
     
     if (recipes.length > index) {
-        recipes.splice(index, 1); 
-        localStorage.setItem("recipes", JSON.stringify(recipes)); 
-        location.reload(); 
+        recipes.splice(index, 1);
+        localStorage.setItem("recipes", JSON.stringify(recipes));
+        location.reload();
     }
 }
