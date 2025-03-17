@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const recipesList = document.getElementById("recipes-list");
-    if (!recipesList) {
-        console.error("Element with ID 'recipes-list' not found.");
-        return;
-    }
 
-    let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+    let username = localStorage.getItem("username") || prompt("Enter your username to load recipes:");
+    if (!username) return alert("No username provided. Unable to load recipes.");
+    localStorage.setItem("username", username);
+
+    let recipes = JSON.parse(localStorage.getItem(`recipes_${username}`)) || [];
 
     if (recipes.length === 0) {
         recipesList.innerHTML = "<p>No recipes found.</p>";
@@ -29,21 +29,21 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".delete-btn").forEach(button => {
         button.addEventListener("click", (event) => {
             const index = event.target.getAttribute("data-index");
-            deleteRecipe(index);
+            deleteRecipe(username, index);
         });
     });
 
-    console.log("see-recipe.js loaded and executed successfully");
+    console.log(`Recipes for ${username} loaded successfully.`);
 });
 
-function deleteRecipe(index) {
-    let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+function deleteRecipe(username, index) {
+    let recipes = JSON.parse(localStorage.getItem(`recipes_${username}`)) || [];
     index = parseInt(index);
     if (index < 0 || index >= recipes.length) {
         console.error("Invalid index for recipe deletion.");
         return;
     }
     recipes.splice(index, 1);
-    localStorage.setItem("recipes", JSON.stringify(recipes));
+    localStorage.setItem(`recipes_${username}`, JSON.stringify(recipes));
     location.reload();
 }
