@@ -1,9 +1,11 @@
+// see-recipe.js
+
 document.addEventListener("DOMContentLoaded", () => {
-    const recipeList = document.getElementById("recipe-list");
+    const recipesList = document.getElementById("recipes-list");
     let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
 
     if (recipes.length === 0) {
-        recipeList.innerHTML = "<p>No recipes found.</p>";
+        recipesList.innerHTML = "<p>No recipes found.</p>";
         return;
     }
 
@@ -18,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <button onclick="deleteRecipe(${index})">Delete</button>
         `;
 
-        recipeList.appendChild(recipeDiv);
+        recipesList.appendChild(recipeDiv);
     });
 });
 
