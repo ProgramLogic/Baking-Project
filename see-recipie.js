@@ -1,4 +1,4 @@
-// see-recipe.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const recipesList = document.getElementById("recipes-list");
