@@ -1,5 +1,3 @@
-// create-recipe.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("recipe-form");
     const message = document.getElementById("message");
