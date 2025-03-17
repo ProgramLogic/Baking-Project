@@ -174,3 +174,43 @@ button:hover {
 .pg2 {
   background-color: blue;
 }
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  margin: 10px;
+}
+
+a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+h1 {
+  color: #333;
+}
+
+#recipes-list {
+  margin-top: 20px;
+}
+
+#recipes-list div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button.delete-recipe {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.delete-recipe:hover {
+  background-color: darkred;
+}
