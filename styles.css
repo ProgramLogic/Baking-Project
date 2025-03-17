@@ -214,3 +214,7 @@ button.delete-recipe {
 button.delete-recipe:hover {
   background-color: darkred;
 }
+
+.top3 {
+  position: absolute;
+}
