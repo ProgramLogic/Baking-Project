@@ -218,3 +218,18 @@ button.delete-recipe:hover {
 .top3 {
   position: absolute;
 }
+
+.eating {
+  position: absolute; /* Ensures it can be layered */
+  background: transparent;
+  z-index: 0; /* Places it behind other elements */
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.wred, .cb {
+  position: relative; /* Keeps text elements above */
+  z-index: 1; /* Ensures they stay on top */
+  background: rgba(255, 255, 255, 0.7); /* Optional: Makes text readable */
+  padding: 10px;
+}
