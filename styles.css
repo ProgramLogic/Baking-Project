@@ -174,3 +174,5 @@ button:hover {
 .pg2 {
   background-color: blue;
 }
+
+@import "tailwindcss";
