@@ -3,37 +3,38 @@
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <script type="module" src="script.js"></script>
   </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Baking Recipies</a> 
-      <a href="/page3.html">Baking Unit Calculator</a> 
-      <a href="/page4.html">Recipies of the Day</a> 
-      <a href="/page5.html">AI Baking Assistant</a> 
-      <a href="/page6.html">Menu Finder</a> 
+  <body class="bg-gray-100 text-gray-800">
 
-      <!--<a href="register.html" class="btn2">Register</a>
-      <a href="signin.html" class="btn1">Sign In</a>-->
-      
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4">
+      <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+        <a href="/" aria-current="page" class="text-white text-lg font-semibold hover:text-gray-300">Home</a>
+        <a href="/page2.html" class="text-white hover:text-gray-300">Baking Recipies</a>
+        <a href="/page3.html" class="text-white hover:text-gray-300">Baking Unit Calculator</a>
+        <a href="/page4.html" class="text-white hover:text-gray-300">Recipies of the Day</a>
+        <a href="/page5.html" class="text-white hover:text-gray-300">AI Baking Assistant</a>
+        <a href="/page6.html" class="text-white hover:text-gray-300">Menu Finder</a>
+      </div>
     </nav>
 
-    <main>
-      <h1 class="top">Welcome to the Top Bake</h1>
-      <small class="top3">Who am I? Go <a href="who.html">here</a>.</small>
-      <small class="top1">Have any feedback to give us? Go <a href="feedback.html">here</a>.</small>
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+      <h1 class="text-4xl font-bold text-center mb-4 text-blue-700">Welcome to the Top Bake</h1>
+      <small class="block text-center text-sm text-gray-600">Who am I? Go <a href="who.html" class="text-blue-600">here</a>.</small>
+      <small class="block text-center text-sm text-gray-600">Have any feedback to give us? Go <a href="feedback.html" class="text-blue-600">here</a>.</small>
 
-      <h1 class="top2"></h1>
-      <div class="box">
+      <h1 class="text-3xl text-center mt-8 mb-6">Welcome to the Top Bake</h1>
+
       </div>
-      <img class="img" src="singa.png">
+
+      <div class="text-center mt-8">
+        <img class="mx-auto max-w-full h-auto" src="singa.png" alt="Baking image">
+      </div>
     </main>
+
   </body>
 </html>
