@@ -65,14 +65,12 @@
           const conversionRate = conversionRates[ingredient][conversion];
           const convertedAmount = (amount * currentUnitRate) / conversionRate;
 
-          const conversionResult = `Ingredient: ${ingredient}\nAmount: ${amount} ${currentUnit}\nConverted to: ${convertedAmount} ${conversion}`;
+          // Display only the converted amount in the dev tools console
+          console.log("Converted Amount:", convertedAmount);
 
-          // Display the result in the dev tools console
-          console.log("Conversion Result:\n", conversionResult);
-
-          // Also update the unit output textarea (optional)
+          // Update the unit output textarea to only show the converted value
           const outputField = document.getElementById("unit-output");
-          outputField.value = conversionResult;
+          outputField.value = `${convertedAmount} ${conversion}`;
 
           // Show a success message in the UI (optional)
           const message = document.getElementById("message");
