@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <style>
       body {
-        background-color:aqua;
+        background-color: aqua;
         color: rgb(255, 255, 255);
       }
 
@@ -16,7 +16,7 @@
       }
 
       button {
-        background-color:darkgoldenrod;
+        background-color: darkgoldenrod;
         color: white;
         border: 2px solid white;
       }
@@ -38,20 +38,17 @@
       <form id="recipe-form">
         <label for="ingredients">Enter your Ingredient:</label>
         <textarea id="ingredients" name="ingredients" rows="6" required></textarea>
-        
-        <label for="ingredients">Current Unit:</label>
-        <textarea id="ingredients" name="ingredients" rows="1" required></textarea>
+
+        <label for="current-unit">Current Unit:</label>
+        <textarea id="current-unit" name="current-unit" rows="1" required></textarea>
 
         <label for="conversion">What you want to convert to:</label>
         <textarea id="conversion" name="conversion" rows="1" required></textarea>
 
         <label for="unit-output">Unit Output:</label>
-        <textarea id="unit-output" name="unit-output" rows="6" required></textarea>
+        <textarea id="unit-output" name="unit-output" rows="6" required readonly></textarea>
 
-        <button type="submit">Covert</button>
-
-        <!--<button type="submit">Save Unit</button>-->
-        
+        <button type="submit">Convert</button>
       </form>
       <p id="message"></p>
     </main>
