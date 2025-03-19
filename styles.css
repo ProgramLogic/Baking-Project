@@ -56,8 +56,8 @@ nav a[aria-current='Unit'] {
 }
 
 .img {
-  width: 840px;
-  height: 550px;
+  width: 140px;
+  height: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -176,3 +176,7 @@ button:hover {
 }
 
 @import "tailwindcss";
+
+.mx-automax-w-fullh-auto {
+  width: 150px;
+}
