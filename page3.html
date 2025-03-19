@@ -26,7 +26,60 @@
         color: black;
       }
     </style>
-    <script type="module" src="script.js"></script>
+    <script type="module">
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("recipe-form");
+
+        // Conversion rates for some ingredients (example)
+        const conversionRates = {
+          flour: { cup: 120, gram: 1 },
+          water: { cup: 240, gram: 1 },
+          salt: { teaspoon: 5.69, gram: 1 },
+          yeast: { teaspoon: 3.1, gram: 1 },
+          butter: { tablespoon: 14.2, gram: 1 },
+          cinnamon: { teaspoon: 2.6, gram: 1 },
+          vanilla: { teaspoon: 4.9, gram: 1 },
+        };
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get the form values
+          const ingredient = document.getElementById("ingredients").value.toLowerCase();
+          const amount = parseFloat(document.getElementById("amount").value);
+          const currentUnit = document.getElementById("current-unit").value.toLowerCase();
+          const conversion = document.getElementById("conversion").value.toLowerCase();
+
+          if (!amount || !ingredient || !currentUnit || !conversion) {
+            alert("Please fill in all fields with valid data.");
+            return;
+          }
+
+          if (!conversionRates[ingredient] || !conversionRates[ingredient][currentUnit] || !conversionRates[ingredient][conversion]) {
+            alert("Invalid conversion details for the selected ingredient.");
+            return;
+          }
+
+          // Conversion logic: convert the amount based on the selected units
+          const currentUnitRate = conversionRates[ingredient][currentUnit];
+          const conversionRate = conversionRates[ingredient][conversion];
+          const convertedAmount = (amount * currentUnitRate) / conversionRate;
+
+          const conversionResult = `Ingredient: ${ingredient}\nAmount: ${amount} ${currentUnit}\nConverted to: ${convertedAmount} ${conversion}`;
+
+          // Display the result in the dev tools console
+          console.log("Conversion Result:\n", conversionResult);
+
+          // Also update the unit output textarea (optional)
+          const outputField = document.getElementById("unit-output");
+          outputField.value = conversionResult;
+
+          // Show a success message in the UI (optional)
+          const message = document.getElementById("message");
+          message.textContent = "Conversion Complete!";
+        });
+      });
+    </script>
   </head>
   <body>
     <nav>
@@ -36,16 +89,16 @@
     <main>
       <h1>Unit Calculator</h1>
       <form id="recipe-form">
-        <label for="ingredients">Enter your Ingredient:</label>
-        <textarea id="ingredients" name="ingredients" rows="6" required></textarea>
-
-        <label for="ingredients">Amount of ingredients to be Converted:</label>
+        <label for="ingredients">Enter your Ingredient (flour, water, salt, yeast, butter, cinnamon, vanilla):</label>
         <textarea id="ingredients" name="ingredients" rows="1" required></textarea>
 
-        <label for="current-unit">Current Unit:</label>
+        <label for="amount">Amount of ingredients to be Converted:</label>
+        <textarea id="amount" name="amount" rows="1" required></textarea>
+
+        <label for="current-unit">Current Unit (e.g., cup, teaspoon, tablespoon):</label>
         <textarea id="current-unit" name="current-unit" rows="1" required></textarea>
 
-        <label for="conversion">What you want to convert to:</label>
+        <label for="conversion">What you want to convert to (e.g., gram, teaspoon, tablespoon):</label>
         <textarea id="conversion" name="conversion" rows="1" required></textarea>
 
         <button type="submit">Convert</button>
