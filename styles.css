@@ -161,16 +161,6 @@ button:hover {
   align-items: flex-start; 
 }
 
-.box {
-  width: 30px;
-  height: 20px;
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
-  position: absolute;
-  right: 30px;
-}
-
 .pg2 {
   background-color: blue;
 }
@@ -180,3 +170,14 @@ button:hover {
 .mx-automax-w-fullh-auto {
   width: 150px;
 }
+
+.box {
+    position: absolute;
+    right: 0;
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+
