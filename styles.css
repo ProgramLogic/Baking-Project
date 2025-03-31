@@ -181,7 +181,7 @@ button:hover {
     margin: 10px;
   }
 
-  .nav-links a {
-    margin-right: 10px; 
-    display: inline-block; 
+  .nav-links {
+    margin-right: 10px;
+    display: inline-block;
 }
