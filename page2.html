@@ -3,55 +3,35 @@
   <head>
     <title>Create Recipe</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="logo (1).png" />
     <script type="module" src="script2.js"></script>
-    <link rel="html" href="create-recipie.html">
-    
-    <style>
-      body {
-        background-color:aqua;
-        color: rgb(255, 255, 255);
-      }
-
-      nav a {
-        color: rgb(0, 0, 0);
-      }
-
-      button {
-        background-color:darkgoldenrod;
-        color: white;
-        border: 2px solid white;
-      }
-
-      button:hover {
-        background-color: white;
-        color: black;
-      }
-    </style>
   </head>
-  <body class="bg-gray-100 text-gray-800"></body>
-    <nav class="bg-blue-600 p-4"></nav>
+  <body class="bg-gray-100 text-gray-800">
 
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="Recipies">Baking Recipes</a>
+    <nav class="bg-blue-600 p-4">
+      <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+        <a href="/" aria-current="page" class="text-white text-lg font-semibold hover:text-gray-300">Home</a>
+        <a href="/page2.html" class="text-white hover:text-gray-300">Baking Recipes</a>
+        <a href="/create-recipie.html" class="text-white hover:text-gray-300">Create Recipe</a>
+        <a href="/see-recipe.html" class="text-white hover:text-gray-300">See Recipes</a>
+        <a href="/del-recipie.html" class="text-white hover:text-gray-300">Delete Recipe</a>
+      </div>
     </nav>
-    <main>
-      <h1 class="info">This is where you make recipes and save them</h1>
 
-      <a href="create-recipie.html">
-        <button class="create">Create a Recipe</button>
-      </a>
-      <a href="see-recipe.html">
-        <button class="create">See Recipies</button>
-      </a>
-      <a href="del-recipie.html">
-        <button class="create">Delete a created recipe</button>
-      </a>
+    <main class="container mx-auto py-8 px-4">
+      <h1 class="text-4xl font-bold text-center mb-4 text-blue-700">Create Your Own Recipe</h1>
+      
+      <div class="text-center">
+        <p class="text-lg text-gray-700 mb-4">This is where you can create and save your favorite recipes.</p>
+      </div>
+
+      <div class="flex justify-center gap-4 mt-6">
+        <a href="create-recipie.html" class="bg-yellow-500 text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-white hover:text-black">Create a Recipe</a>
+        <a href="see-recipe.html" class="bg-yellow-500 text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-white hover:text-black">See Recipes</a>
+        <a href="del-recipie.html" class="bg-yellow-500 text-white px-6 py-2 rounded-lg border-2 border-white hover:bg-white hover:text-black">Delete a Recipe</a>
+      </div>
     </main>
   </body>
 </html>
