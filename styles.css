@@ -191,6 +191,7 @@ button:hover {
 
 .box {
   padding: 16px;
+  padding-top: 6px;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -206,7 +207,7 @@ button:hover {
 }
 
 .toptext {
-  margin-top: 1px;
+  margin-top: 10px;
   font-size: 14px;
   color: #000;
 }
