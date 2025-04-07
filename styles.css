@@ -196,6 +196,7 @@ button:hover {
   border-radius: 8px;
   font-family: sans-serif;
   max-width: 400px;
+  height: 205px;
 }
 
 .text {
