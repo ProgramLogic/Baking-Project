@@ -189,7 +189,24 @@ button:hover {
     margin-right: 20px; 
 }
 
-.text {
-  color: #000;
-  background-color: #000;
+.box {
+  padding: 16px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: sans-serif;
+  max-width: 400px;
 }
+
+.text {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #000;
+}
+
+.toptext {
+  margin-top: 7px;
+  font-size: 14px;
+  color: #000;
+}
+
