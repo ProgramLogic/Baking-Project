@@ -188,3 +188,8 @@ button:hover {
 .nav-links a {
     margin-right: 20px; 
 }
+
+.text {
+  color: #000;
+  background-color: #000;
+}
