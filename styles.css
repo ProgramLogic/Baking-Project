@@ -188,27 +188,3 @@ button:hover {
 .nav-links a {
     margin-right: 20px; 
 }
-
-.box {
-  padding: 16px;
-  padding-top: 6px;
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: sans-serif;
-  max-width: 400px;
-  height: 205px;
-}
-
-.text {
-  margin-top: 7px;
-  font-size: 14px;
-  color: #000;
-}
-
-.toptext {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #000;
-}
-
