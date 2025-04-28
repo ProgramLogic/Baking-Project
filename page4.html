@@ -8,8 +8,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="logo (1).png" />
     <script type="module" src="script2.js"></script>
   </head>
-  <body class="bg-gray-100 text-gray-800">
-    <nav class="bg-blue-600 p-4">
+  <body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+    <nav class="bg-blue-600 p-4 w-full">
       <div class="max-w-screen-xl mx-auto flex justify-between items-center flex-wrap gap-2">
         <a href="/" class="text-white text-lg font-semibold hover:text-gray-300">Home</a>
         <a href="/page2.html" class="text-white hover:text-gray-300">Baking Recipes</a>
@@ -20,9 +20,13 @@
         <a href="/page7.html" class="text-white hover:text-gray-300">Menu of Recipes</a>
       </div>
     </nav>
+
     
-    <button class="clickmenu bg-blue-500 text-white py-3 px-4 rounded hover:bg-blue-700">
-      Click to see what is on the Menu
-    </button>
+    <main class="flex-1 flex flex-col items-center justify-start mt-20">
+      <button class="clickmenu bg-blue-500 text-white py-3 px-6 rounded hover:bg-blue-700 text-lg">
+        Click to see what is on the Menu
+      </button>
+    </main>
+
   </body>
 </html>
